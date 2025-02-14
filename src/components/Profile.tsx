@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel } from "@/components/ui/dropdown-menu";
 import { UserIcon } from "@heroicons/react/24/outline";
 import { DoorClosed } from "lucide-react";
-import UserAvatar from "@/components/UserAvatar"; 
+import UserAvatar from "@/components/UserAvatar"; // Add this import
 import { authService } from "@/services/auth.service";
 
 const Profile = () => {

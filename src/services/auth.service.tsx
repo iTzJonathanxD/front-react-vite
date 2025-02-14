@@ -101,6 +101,7 @@ class AuthService {
   logout(): void {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
+    // Optional: Clear any other auth-related data
     this.axiosInstance.defaults.headers.common['Authorization'] = '';
   }
 
@@ -112,6 +113,7 @@ class AuthService {
     throw error;
   }
 
+  // Helper method to get authenticated axios instance
   get http(): AxiosInstance {
     return this.axiosInstance;
   }
